@@ -50,3 +50,36 @@ Definição da fonte principal para todo o corpo da página. Estilização do co
 
 Relatório: Aprendendo Programação em JavaScript com Lampadas
 
+Relatório de Aprendizado
+O projeto de Lâmpada com Javascript
+O projeto tem por finalidade a criação de um código funcional de javascript, que execute as seguintes situações:
+1.	Acender a lâmpada 
+2.	Desligar a lâmpada
+3.	Quando o número de Acionamentos for maior que dez (10), a lâmpada quebra
+4.	Quando quebrado ela pode ser substituída
+Fazendo-se uso de javascript, css e html, para a execução do mesmo código referido.
+
+Uso e Aprendizado dos Comandos:
+
+•	“const”
+Usado para a declaração de variáveis que são inicializadas no início do programa e não são alteradas. 
+•	“document.getElementById”
+Referência o Elemento através do id, no casso do programa no index.
+•	“var”
+Usado para a declaração de variáveis.
+•	“function”
+Armazena um conjunto de instruções para requisitado durante o código.
+•	“addEventListener”
+Espera uma ação em relação a um alvo único referenciado.
+•	“if else”
+Estrutura condicional para a execução de um comando a partir de variável ou comparação de variáveis recebidas.
+•	“removeEventListener”
+Remove o “addEventListener” usado anteriormente, no programa executado aqui ele desempenha a função de desabilitar os comandos de “Acender” e “Apagar”, somente quando a lâmpada estiver apagada.
+
+O que foi aprendido?
+•	Uma das Aplicações do JavaScript é dar dinamismo ao código;
+•	O uso de function para criar linhas de comandos a serem usados no momento oportuno;
+•	A var como declaração de vairiáveis;
+•	addEventListerner para adicionar um comando de observação de um evento e quando ocorre, executasse um coando.
+•	document.getElementById usado para o link e referenciamento na página html.
+
