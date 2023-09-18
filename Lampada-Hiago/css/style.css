@@ -1,0 +1,58 @@
+/* Definições de estilo para o corpo da página */
+body {
+  height: 100%; /* Define a altura do corpo como 100% da altura da janela do navegador */
+  width: 100%; /* Define a largura do corpo como 100% da largura da janela do navegador */
+  background: rgb(
+    208,
+    175,
+    228
+  ); /* Define um plano de fundo com uma cor de fundo sólida */
+  background: linear-gradient(
+    90deg,
+    rgba(208, 175, 228, 1) 5%,
+    /* Gradiente linear: cor de fundo inicial */
+      rgba(148, 187, 233, 0.9668242296918768) 72%
+      /* Gradiente linear: cor de fundo final */
+  );
+  height: 100%; /* Esta regra é redundante, já que a altura já foi definida anteriormente */
+}
+
+/* Estilos para o cabeçalho e seção principal */
+header,
+main {
+  display: flex; /* Configura o elemento como um flex container */
+  flex-direction: column; /* Define o fluxo de itens como coluna */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Estilos para todos os botões */
+button {
+  width: 100px; /* Define a largura de todos os botões como 100 pixels */
+  background: rgb(
+    0,
+    0,
+    0
+  ); /* Define um plano de fundo com uma cor de fundo sólida */
+  background: linear-gradient(
+    75deg,
+    rgba(0, 0, 0, 1) 4%,
+    /* Gradiente linear: cor de fundo inicial */ rgba(0, 0, 0, 1) 15%,
+    /* Gradiente linear: cor de fundo intermediária */
+      rgba(137, 20, 187, 0.896796218487395) 100%
+      /* Gradiente linear: cor de fundo final */
+  );
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; /* Define a fonte do texto dos botões */
+}
+
+/* Estilos para os títulos de nível 1 (h1) */
+h1 {
+  font-family: Verdana; /* Define a fonte do título h1 */
+  color: whitesmoke; /* Define a cor do texto do título h1 */
+}
+
+/* Estilos para os títulos de nível 4 (h4) */
+h4 {
+  font-family: Verdana; /* Define a fonte do título h4 */
+  color: whitesmoke; /* Define a cor do texto do título h4 */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português brasileiro -->
+  <head>
+    <meta charset="UTF-8" /> <!-- Configura a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Define a escala inicial para dispositivos móveis -->
+    <link rel="stylesheet" href="css/style.css" /> <!-- Vincula o arquivo de estilo "style.css" à página -->
+    <title>Page Home</title> <!-- Define o título da página exibido na aba do navegador -->
+  </head>
+  <body>
+    <header>
+      <h1>Jogo da Lampada</h1> <!-- Cabeçalho com o título "Jogo da Lâmpada" -->
+    </header>
+
+    <main>
+      <div>
+        <!-- Adiciona Imagem Inicial -->
+        <img src="img/LampadaApagada2.png" alt="Lampada Apagada" id="lamp" />
+        <!-- Inclui uma imagem inicial de uma lâmpada apagada com um atributo alt para acessibilidade -->
+      </div>
+
+      <div>
+        <!-- Botões -->
+        <button id="botaoLig"><h4>Ligar</h4></button>
+        <!-- Botão para ligar a lâmpada -->
+        <button id="botaoDes"><h4>Desligar</h4></button>
+        <!-- Botão para desligar a lâmpada -->
+        <button id="resetar"><h4>Resetar</h4></button>
+        <!-- Botão para resetar o estado da lâmpada -->
+      </div>
+    </main>
+
+    <!-- Chama o JS -->
+    <script src="lampada.js"></script>
+    <!-- Inclui um arquivo JavaScript externo chamado "lampada.js" -->
+  </body>
+</html>
