@@ -1,57 +1,64 @@
-/* styles.css */
+/* Definição de estilos para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: rgb(0, 0, 0); /* Cor de fundo ciano */
+    font-family: Arial, sans-serif; /* Define a fonte usada para o texto na página */
+    display: flex; /* Configura o modelo de exibição como flex para centralizar elementos verticalmente e horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    height: 100vh; /* Define a altura da página como 100% da altura da janela (viewport) */
+    margin: 0; /* Remove as margens padrão do corpo */
+    background-color: rgb(0, 0, 0); /* Define a cor de fundo do corpo como ciano (preto) */
 }
 
+/* Definição de estilos para um container */
 .container {
-    text-align: center;
+    text-align: center; /* Centraliza o texto no container */
 }
 
+/* Definição de estilos para o cronômetro */
 .cronometro {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255); /* Define a cor de fundo do cronômetro como branca */
+    padding: 20px; /* Adiciona preenchimento interno de 20 pixels ao cronômetro */
+    border-radius: 10px; /* Arredonda as bordas do cronômetro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao cronômetro */
 }
 
+/* Estilos para uma imagem */
 img {
-    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
-    margin-bottom: 10px;
+    width: 50px; /* Define a largura da imagem como 50 pixels (ajustável conforme necessário) */
+    margin-bottom: 10px; /* Adiciona um espaço na parte inferior da imagem */
 }
 
+/* Estilos para o elemento com a classe "tempo" */
 .tempo {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2em; /* Define o tamanho da fonte como 2 vezes o tamanho padrão */
+    margin-bottom: 10px; /* Adiciona um espaço na parte inferior do elemento */
 }
 
+/* Estilos para os botões */
 button {
-    font-size: 1em;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
+    font-size: 1em; /* Define o tamanho da fonte como o tamanho padrão */
+    padding: 10px 20px; /* Adiciona preenchimento interno de 10px na parte superior e inferior e 20px nas laterais */
+    margin: 5px; /* Adiciona margem ao redor dos botões */
+    cursor: pointer; /* Altera o cursor do mouse para indicar que os botões são clicáveis */
 }
 
-/* Estilo para os botões (pode ser personalizado conforme necessário) */
+/* Estilo específico para o botão "Iniciar" */
 button.iniciar {
-    background-color: green;
-    color: white;
-    border: none;
+    background-color: green; /* Define a cor de fundo como verde */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda do botão */
 }
 
+/* Estilo específico para o botão "Parar" */
 button.parar {
-    background-color: red;
-    color: white;
-    border: none;
+    background-color: red; /* Define a cor de fundo como vermelho */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda do botão */
 }
 
+/* Estilo específico para o botão "Zerar" */
 button.zerar {
-    background-color: gray;
-    color: white;
-    border: none;
+    background-color: gray; /* Define a cor de fundo como cinza */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda do botão */
 }
