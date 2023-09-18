@@ -1,0 +1,158 @@
+/* Define o box-sizing como 'border-box' para facilitar o dimensionamento, zera margens e preenchimentos padrão em todos os elementos */
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Estilos globais para o corpo da página */
+body {
+    height: 100vh;
+    width: 100vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(137, 21, 142, 1) 100%);
+}
+
+/* Estilos para o tabuleiro do jogo */
+.board {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+/* Estilos para as células do jogo */
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilos para as células marcadas com 'X' ou 'Círculo' */
+.cell.x,
+.cell.circle {
+    cursor: not-allowed;
+}
+
+/* Estilos para remover as bordas nas extremidades do tabuleiro */
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+    border-left: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+    border-right: none;
+}
+
+/* Estilos para destacar células quando o jogador passa o mouse */
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+    background: rgb(91, 33, 93);
+    background: linear-gradient(90deg, rgba(91, 33, 93, 1) 0%, rgba(197, 148, 200, 1) 100%) !important;
+}
+
+/* Estilos para o símbolo 'X' */
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:hover::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after {
+    content: "";
+    height: calc(100px * 0.15);
+    width: calc(100px * 0.9);
+    background: rgb(91, 33, 93);
+    background: linear-gradient(90deg, rgba(91, 33, 93, 1) 0%, rgba(197, 148, 200, 1) 100%);
+    position: absolute;
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before {
+    transform: rotate(45deg);
+}
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after {
+    transform: rotate(-45deg);
+}
+
+/* Estilos para o símbolo 'Círculo' */
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+    content: "";
+    height: calc(100px * 0.9);
+    width: calc(100px * 0.9);
+    background: rgb(91, 33, 93);
+    background: linear-gradient(90deg, rgba(91, 33, 93, 1) 0%, rgba(197, 148, 200, 1) 100%);
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* Estilos para a mensagem de vitória */
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+.winning-message button {
+    font-size: 2.5rem;
+    background: rgb(45, 6, 47);
+    background: linear-gradient(0deg, rgba(45, 6, 47, 1) 0%, rgba(119, 38, 123, 1) 76%);
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 16px;
+    color: white;
+}
+
+.winning-message button:hover {
+    color: rgba(23, 138, 17, 1) 0%;
+    background: rgb(45, 6, 47);
+    background: linear-gradient(0deg, rgba(45, 6, 47, 1) 0%, rgba(119, 38, 123, 1) 76%);
+}
+
+.winning-message-text {
+    color: white;
+    font-size: 5rem;
+}
+
+/* Estilos para mostrar a mensagem de vitória */
+.show-winning-message {
+    display: flex;
+}
